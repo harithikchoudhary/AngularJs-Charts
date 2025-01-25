@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple AngularJS Project</title>
+    <base href="/">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body ng-controller="MainController as mainVm">
+    <app-navbar></app-navbar>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <!-- Dependencies -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/navbar/navbar.controller.js"></script>
+    <script src="app/components/navbar/navbar.directive.js"></script>
+    <script src="app/components/home/home.controller.js"></script>
+    <script src="app/components/products/products.controller.js"></script>
+    <script src="app/components/about/about.controller.js"></script>
+    <script src="app/services/products.service.js"></script>
+    <script src="app/services/chart.service.js"></script>
+    <script src="app/components/chart/chart.controller.js"></script>
+</body>
+</html>
